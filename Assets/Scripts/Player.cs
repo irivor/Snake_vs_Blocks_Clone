@@ -55,11 +55,33 @@ public class Player : MonoBehaviour
                 componentSnakeTail.AddCircle();
             }
         }
+        else if (collision.gameObject.tag == "Block")
+        {
+            value = collision.gameObject.GetComponent<Block>().Value;
+            if (value >= Health)
+            {
+                Game.OnPlayerDied();
+                componentRigidbody.velocity = Vector3.zero;
+            }
+            else
+            {
+                Health -= value;
+                PointsText.SetText(Health.ToString());
+                Destroy(collision.gameObject);
 
+                for (int i = 0; i < value; i++)
+                {
+                    Length--;
+                    componentSnakeTail.RemoveCircle();
+                }
+            }
+        }
         else if (collision.gameObject.tag == "Finish")
         {
             Game.OnPlayerWin();
         }
     }
 }
+
+
 

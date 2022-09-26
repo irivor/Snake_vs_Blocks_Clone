@@ -10,7 +10,7 @@ public class Block : MonoBehaviour
     void Start()
     {
         PointsText.SetText(Value.ToString());
-        lerpedColor = Color.Lerp(Color.white, Color.red, (float)Value / 20f);
+        lerpedColor = Color.Lerp(Color.white, Color.blue, (float)Value / 20f);
         this.GetComponent<Renderer>().material.color = lerpedColor;
     }
 }
