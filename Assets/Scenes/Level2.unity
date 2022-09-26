@@ -3279,11 +3279,20 @@ PrefabInstance:
       propertyPath: Win
       value: 
       objectReference: {fileID: 1234130502}
+    - target: {fileID: 8157309654112875239, guid: 6f06fa58e7064ef44b9f62d5c14b8f64, type: 3}
+      propertyPath: FinishSound
+      value: 
+      objectReference: {fileID: 1541207963}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f06fa58e7064ef44b9f62d5c14b8f64, type: 3}
 --- !u!4 &1541207962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8157309654112875236, guid: 6f06fa58e7064ef44b9f62d5c14b8f64, type: 3}
+  m_PrefabInstance: {fileID: 1541207961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1541207963 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8157309654112875227, guid: 6f06fa58e7064ef44b9f62d5c14b8f64, type: 3}
   m_PrefabInstance: {fileID: 1541207961}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1562874411
